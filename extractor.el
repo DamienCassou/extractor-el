@@ -112,7 +112,7 @@ sub-directory is desired."
   (interactive "P")
   (extractor-extract-internal (dired-file-name-at-point)
                               (dired-current-directory)
-                              (if arg 'local 'subdir)
+                              (if local 'local 'subdir)
                               t)
   (revert-buffer))
 
